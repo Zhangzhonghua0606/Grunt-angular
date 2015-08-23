@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+  <title>Modals with Angular and Ui-Router</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script src="../bower_components/angular/angular.min.js"></script>
+  <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/featureCtrl.js"></script>
+  <script type="text/javascript" src="js/memberCtrl.js"></script>
+</head>
+<body>
+  <div ng-controller="myController as vm">
+    <p ng-bind="vm.hello" class="label label-primary"></p>
+  </div>
+  <div>===============================================================</div>
+  <h3>Pusheen Hoodie</h3>
+    <p>Now you too can look like Pusheen!</p>
+    <button class="btn btn-primary" ui-sref="modal.confirmAddToCart">Add to cart</button>
+
+  <div ui-view="modal" autoscroll="false"></div>
+  <div>===============================================================</div>
+  <div ui-view></div>
+</body>
+</html>
