@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 10px;
+}
+
 .Modal-backdrop
 {
  position: fixed;
