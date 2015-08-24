@@ -1,15 +1,9 @@
 <!doctype html>
-<html ng-app="myApp">
+<html>
 <head>
   <title>Modals with Angular and Ui-Router</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <script src="../bower_components/angular/angular.min.js"></script>
-  <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
-  <script type="text/javascript" src="js/featureCtrl.js"></script>
-  <script type="text/javascript" src="js/memberCtrl.js"></script>
 </head>
 <body>
   <div ng-controller="myController as vm">
@@ -23,5 +17,7 @@
   <div ui-view="modal" autoscroll="false"></div>
   <div>===============================================================</div>
   <div ui-view></div>
+
+  <script src="../bower_components/requirejs/require.js" data-main="main.js"></script>
 </body>
 </html>
