@@ -38,6 +38,8 @@ define [
       .state 'modal.confirmAddToCart',
         parent: 'modal'
         templateUrl: 'partials/modal/confirm.html'
+        controller: 'ctrl.modal.confirm'
+        controllerAs: 'confirm'
         onEnter: ['$state', ($state) ->
           $(document).on 'keyup', (e) ->
             if e.keyCode is 27

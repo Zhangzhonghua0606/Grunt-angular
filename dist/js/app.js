@@ -30,6 +30,8 @@ define(['angular', 'angularUIRouter', 'coreLoader'], function(angular) {
       }).state('modal.confirmAddToCart', {
         parent: 'modal',
         templateUrl: 'partials/modal/confirm.html',
+        controller: 'ctrl.modal.confirm',
+        controllerAs: 'confirm',
         onEnter: [
           '$state', function($state) {
             $(document).on('keyup', function(e) {
