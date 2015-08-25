@@ -38,6 +38,17 @@ module.exports = (grunt) ->
         dest: '<%= config.dist %>/js'
         ext: '.js'
 
+    sass:
+      options:
+        sourcemap: 'none'
+        style: 'expanded'
+      buildModule:
+        expand: true
+        cwd: '<%= config.app %>/'
+        src: 'scss/app.scss'
+        dest: '<%= config.dist %>/'
+        ext: '.css'
+
     watch:
       options:
         livereload: true
@@ -45,4 +56,7 @@ module.exports = (grunt) ->
       coffeeModule:
         files: ['<%= config.app %>/coffee/**/*.coffee']
         tasks: ['coffee:buildModule']
+      sassModule:
+        files: ['<%= config.app %>/scss/**/*.scss']
+        tasks: ['sass:buildModule']
 
