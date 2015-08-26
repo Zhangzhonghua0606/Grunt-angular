@@ -29,6 +29,11 @@ define [
         templateUrl: 'partials/home.html'
         controller: 'ctrl.home'
         controllerAs: 'home'
+      .state 'angular',
+        url: '/angular'
+        templateUrl: 'partials/angular.html'
+        controller: 'ctrl.angular'
+        controllerAs: 'angular'
       .state 'modal',
         views:
           modal:

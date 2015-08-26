@@ -19,6 +19,11 @@ define(['angular', 'angularUIRouter', 'coreLoader'], function(angular) {
         templateUrl: 'partials/home.html',
         controller: 'ctrl.home',
         controllerAs: 'home'
+      }).state('angular', {
+        url: '/angular',
+        templateUrl: 'partials/angular.html',
+        controller: 'ctrl.angular',
+        controllerAs: 'angular'
       }).state('modal', {
         views: {
           modal: {

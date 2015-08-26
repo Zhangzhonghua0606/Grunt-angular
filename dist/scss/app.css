@@ -6,23 +6,42 @@ body {
   padding: 10px;
 }
 
-.Modal-backdrop {
+.member-div {
+  width: 200px;
+  height: 200px;
+  border: 5px solid;
+  margin: 5px;
+  padding: 5px;
+  float: left;
+  overflow: auto;
+}
+
+.member-ul {
+  float: left;
+}
+.member-ul li {
+  font-size: 16px;
+  margin: 5px;
+}
+.member-ul button {
+  margin-top: 10px;
+}
+
+.fill-screen, .Modal-backdrop, .Modal-holder {
   position: fixed;
   top: 0px;
   left: 0px;
   height: 100%;
   width: 100%;
-  background: #000;
+}
+
+.Modal-backdrop {
+  background-color: #000;
   z-index: 1;
   opacity: 0.5;
 }
 
 .Modal-holder {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
   background: transparent;
   z-index: 2;
   padding: 30px 15px;
@@ -43,26 +62,4 @@ body {
     width: 50%;
     padding: 30px;
   }
-}
-.member-div {
-  width: 200px;
-  height: 200px;
-  border: 5px solid;
-  margin: 5px;
-  padding: 5px;
-  float: left;
-  overflow: auto;
-}
-
-.member-ul {
-  float: left;
-}
-
-.member-ul li {
-  font-size: 16px;
-  margin: 5px;
-}
-
-.member-ul button {
-  margin-top: 10px;
 }

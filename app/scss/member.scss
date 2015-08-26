@@ -1,0 +1,24 @@
+.member-div {
+  width: 200px;
+  height: 200px;
+  border: 5px solid;
+  margin: 5px;
+  padding: 5px;
+  float: left;
+  overflow: auto;
+}
+
+.member-ul {
+  float: left;
+
+  li
+  {
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  button
+  {
+    margin-top: 10px;
+  }
+}

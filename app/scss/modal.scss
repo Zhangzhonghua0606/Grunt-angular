@@ -1,0 +1,43 @@
+.fill-screen {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+@mixin background-color ($color) {
+  background-color: $color;
+}
+
+.Modal-backdrop {
+ @extend .fill-screen;
+ @include background-color ($modalBackColor);
+ z-index: 1;
+ opacity: 0.5;
+}
+
+.Modal-holder {
+  @extend .fill-screen;
+  background: transparent;
+  z-index: 2;
+  padding: 30px 15px;
+}
+
+.Modal-box {
+  margin: 0 auto;
+  width: 100%;
+  background: #fff;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .Modal-box
+  {
+    width: 50%;
+    padding: 30px;
+  }
+}

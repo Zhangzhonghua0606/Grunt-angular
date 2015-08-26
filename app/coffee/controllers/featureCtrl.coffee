@@ -1,7 +1,13 @@
 define ['coreModule'], (app) ->
-  app.controller 'ctrl.feature', ['$scope', ($scope) ->
-    vm = this
-    vm.title = 'This is a feature page'
+  app.controller 'ctrl.feature', [
+    '$scope'
+    '$q'
+    '$timeout'
+    '$interval'
+    ($scope, $q, $timeout, $interval) ->
 
-    vm
-  ]
+      vm = this
+      vm.title = 'This is a feature page'
+
+      vm
+    ]

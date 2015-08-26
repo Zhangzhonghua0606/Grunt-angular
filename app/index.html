@@ -6,15 +6,23 @@
   <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
-  <div>
-    <h2 ng-bind="hello"></h2>
+  <div class="page-header">
+    <h1>My grunt angular page
+      <small>
+        <small>
+          <p class="label label-success">coffee</p>
+          <p class="label label-info">sass</p>
+        </small>
+      </small>
+    </h1>
   </div>
   <ul class="nav nav-tabs">
   <li role="presentation" class="active"><a ui-sref="home">Home</a></li>
   <li role="presentation"><a ui-sref="feature">Feature</a></li>
   <li role="presentation"><a ui-sref="member">Member</a></li>
+  <li role="presentation"><a ui-sref="angular">Angular</a></li>
   <li role="presentation" class="dropdown">
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
       Dropdown <span class="caret"></span>
     </a>
     <ul class="dropdown-menu">

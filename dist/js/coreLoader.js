@@ -1,1 +1,1 @@
-define(['./controllers/featureCtrl', './controllers/memberCtrl', './controllers/homeCtrl', './controllers/modal/confirmCtrl', './services/userService'], function() {});
+define(['./controllers/featureCtrl', './controllers/memberCtrl', './controllers/homeCtrl', './controllers/angularCtrl', './controllers/modal/confirmCtrl', './services/userService'], function() {});
