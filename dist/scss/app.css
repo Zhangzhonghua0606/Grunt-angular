@@ -7,13 +7,8 @@ body {
 }
 
 .main.ng-enter {
-  -webkit-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
-  transition: 0.5s;
-}
-.main.ng-enter-active {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-animation: fadeInUp 0.75s ease;
+  animation: fadeInUp 0.75s ease;
 }
 
 .member .member-div {
