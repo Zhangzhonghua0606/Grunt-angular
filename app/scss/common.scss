@@ -45,3 +45,13 @@ body {
   //   transform: translate3d(100%, 0, 0);
   // }
 }
+
+.modal-animation {
+  &.ng-enter {
+    @include effect(fadeIn);
+  }
+
+  &.ng-leave {
+    @include effect(fadeOut);
+  }
+}

@@ -11,6 +11,15 @@ body {
   animation: fadeInUp 0.75s ease;
 }
 
+.modal-animation.ng-enter {
+  -webkit-animation: fadeIn 0.75s ease;
+  animation: fadeIn 0.75s ease;
+}
+.modal-animation.ng-leave {
+  -webkit-animation: fadeOut 0.75s ease;
+  animation: fadeOut 0.75s ease;
+}
+
 .member .member-div {
   width: 200px;
   height: 200px;
