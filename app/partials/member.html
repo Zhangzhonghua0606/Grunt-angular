@@ -1,47 +1,49 @@
-<h3>{{member.title}}</h3>
-<div class="member-div" autoscroll="true">
-  <div class="scroll-list">
-    <code>
-      .member-div<br/>
-      {<br/>
-        &nbsp;&nbsp;width: 200px;<br/>
-        &nbsp;&nbsp;height: 200px; <br/>
-        &nbsp;&nbsp;border: 5px solid; <br/>
-        &nbsp;&nbsp;margin: 5px; <br/>
-        &nbsp;&nbsp;padding: 5px; <br/>
-        ...<br/>
-        ...<br/>
-        ...<br/>
-        ...<br/>
-        ...<br/>
-        ...<br/>
-        ...<br/>
-        ...<br/>
-        ...<br/>
-        ...<br/>
-        ...<br/>
-        ...<br/>
-        ...<br/>
-        ...<br/>
-        ...<br/>
-        ...<br/>
-        ...<br/>
-        ...<br/>
-        ...<br/>
-        ...<br/>
-      }<br/>
-    </code>
-  </div>
-</div>
-<div>
-  <ul class="member-ul">
-    <li>$('.member-div').height() = 180</li>
-    <li>$('.member-div').innerHeight() = 190 (+ padding)</li>
-    <li>$('.member-div').outerHeight() = 200 (+ padding + border)</li>
-    <li>$('.member-div').outerHeight(true) = 210 (+ padding + border + margin)</li>
-    <li>$('.member-div').scrollTop() = {{member.scrollTopValue}} (用于控制滚动条的位置)，<code>scrollTop()</code>接收一个参数用于指定滚动条位置</li>
-    <li>$('.scroll-list').outerHeight() = 588</li>
-    <button class="btn btn-default" ng-click="member.goToTop()">去顶部</button>
-    <button class="btn btn-default" ng-click="member.goToBottom()">去底部</button>
-  </ul>
+<div class="member">
+    <h3>{{member.title}}</h3>
+    <div class="member-div" autoscroll="true">
+      <div class="scroll-list">
+        <code>
+          .member-div<br/>
+          {<br/>
+            &nbsp;&nbsp;width: 200px;<br/>
+            &nbsp;&nbsp;height: 200px; <br/>
+            &nbsp;&nbsp;border: 5px solid; <br/>
+            &nbsp;&nbsp;margin: 5px; <br/>
+            &nbsp;&nbsp;padding: 5px; <br/>
+            ...<br/>
+            ...<br/>
+            ...<br/>
+            ...<br/>
+            ...<br/>
+            ...<br/>
+            ...<br/>
+            ...<br/>
+            ...<br/>
+            ...<br/>
+            ...<br/>
+            ...<br/>
+            ...<br/>
+            ...<br/>
+            ...<br/>
+            ...<br/>
+            ...<br/>
+            ...<br/>
+            ...<br/>
+            ...<br/>
+          }<br/>
+        </code>
+      </div>
+    </div>
+    <div>
+      <ul class="member-ul">
+        <li>$('.member-div').height() = 180</li>
+        <li>$('.member-div').innerHeight() = 190 (+ padding)</li>
+        <li>$('.member-div').outerHeight() = 200 (+ padding + border)</li>
+        <li>$('.member-div').outerHeight(true) = 210 (+ padding + border + margin)</li>
+        <li>$('.member-div').scrollTop() = {{member.scrollTopValue}} (用于控制滚动条的位置)，<code>scrollTop()</code>接收一个参数用于指定滚动条位置</li>
+        <li>$('.scroll-list').outerHeight() = 588</li>
+        <button class="btn btn-default" ng-click="member.goToTop()">去顶部</button>
+        <button class="btn btn-default" ng-click="member.goToBottom()">去底部</button>
+      </ul>
+    </div>
 </div>

@@ -1,15 +1,17 @@
+<div class="home">
+  <div>
+    <h4>
+      <p class="label label-success">label-success</p>
+      <p class="label label-info">label-info</p>
+      <p class="label label-warning">label-warning</p>
+      <p class="label label-danger">label-danger</p>
+      <p class="label label-default">label-default</p>
+      <p class="label label-primary">label-primary</p>
+    </h4>
+    <p>
+      <code>{{home.currentUser}}</code>
+    </p>
+    <button class="btn btn-primary" ui-sref="modal.confirmAddToCart">Add to cart</button>
+  </div>
+  <div ui-view="modal" autoscroll="false"></div>
 </div>
-  <h4>
-    <p class="label label-success">label-success</p>
-    <p class="label label-info">label-info</p>
-    <p class="label label-warning">label-warning</p>
-    <p class="label label-danger">label-danger</p>
-    <p class="label label-default">label-default</p>
-    <p class="label label-primary">label-primary</p>
-  </h4>
-  <p>
-    <code>{{home.currentUser}}</code>
-  </p>
-  <button class="btn btn-primary" ui-sref="modal.confirmAddToCart">Add to cart</button>
-</div>
-<div ui-view="modal" autoscroll="false"></div>

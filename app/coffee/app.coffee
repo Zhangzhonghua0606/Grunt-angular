@@ -1,10 +1,12 @@
 define [
   'angular'
   'angularUIRouter'
+  'angularAnimate'
   'coreLoader'
 ], (angular) ->
   app = angular.module 'my-app', [
     'ui.router'
+    'ngAnimate'
     'coreModule'
   ]
 
@@ -64,4 +66,4 @@ define [
     .run ['$rootScope', ($rootScope) ->
       $rootScope.hello = 'Hello Byron'
     ]
-  app;
+  app

@@ -1,6 +1,6 @@
-define(['angular', 'angularUIRouter', 'coreLoader'], function(angular) {
+define(['angular', 'angularUIRouter', 'angularAnimate', 'coreLoader'], function(angular) {
   var app;
-  app = angular.module('my-app', ['ui.router', 'coreModule']);
+  app = angular.module('my-app', ['ui.router', 'ngAnimate', 'coreModule']);
   app.config([
     '$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
       $urlRouterProvider.otherwise('/home');
