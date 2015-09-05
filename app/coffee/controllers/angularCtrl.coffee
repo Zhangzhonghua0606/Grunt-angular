@@ -4,10 +4,13 @@ define ['coreModule'], (app) ->
     '$q'
     '$timeout'
     '$interval'
-    ($scope, $q, $timeout, $interval) ->
+    '$stateParams'
+    ($scope, $q, $timeout, $interval, $stateParams) ->
       vm = this
 
       vm.title = 'This is a angular page'
+
+      console.log $stateParams
 
       deferred = $q.defer()
 

@@ -20,7 +20,7 @@ define(['angular', 'angularUIRouter', 'angularAnimate', 'coreLoader'], function(
         controller: 'ctrl.home',
         controllerAs: 'home'
       }).state('angular', {
-        url: '/angular',
+        url: '/angular/:target/edit/:id',
         templateUrl: 'partials/angular.html',
         controller: 'ctrl.angular',
         controllerAs: 'angular'
