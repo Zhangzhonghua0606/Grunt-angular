@@ -60,3 +60,13 @@ module.exports = (grunt) ->
         files: ['<%= config.app %>/scss/**/*.scss']
         tasks: ['sass:buildModule']
 
+  grunt.registerTask 'build', [
+    'coffee'
+    'sass'
+  ]
+
+  grunt.registerTask 'default', [
+    'build'
+    'watch'
+  ]
+
