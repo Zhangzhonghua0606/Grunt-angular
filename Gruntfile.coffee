@@ -60,6 +60,15 @@ module.exports = (grunt) ->
         files: ['<%= config.app %>/scss/**/*.scss']
         tasks: ['sass:buildModule']
 
+  # Demo for registerMutiTask
+    log:
+      foo: [1, 2, 3]
+      bar: 'hello world'
+      baz: false
+
+  grunt.registerMultiTask 'log', ->
+    grunt.log.writeln @target + ':' + @data
+
   grunt.registerTask 'build', [
     'coffee'
     'sass'
