@@ -1,3 +1,23 @@
 .angular {
   @include animation();
+
+  @mixin margin($px: 20px) {
+    margin: $px;
+  }
+
+  .outer {
+    padding-left: 10px;
+    background-color: $orange;
+
+    .inner {
+      @include margin();
+      background-color: $gray;
+      padding-left: 10px;
+    }
+
+    .inner-if {
+      @include margin();
+      background-color: $silver;
+    }
+  }
 }

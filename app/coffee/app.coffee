@@ -65,5 +65,6 @@ define [
     ]
     .run ['$rootScope', ($rootScope) ->
       $rootScope.hello = 'Hello Byron'
+      $rootScope.there = 'Hello Byron'
     ]
   app

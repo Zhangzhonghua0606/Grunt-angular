@@ -65,7 +65,7 @@ define ['coreModule'], (app) ->
 
       deferred.promise
       .then (one) ->
-        console.log('Promise one resolved with ', one);
+        # console.log('Promise one resolved with ', one);
         anotherDeferred = $q.defer();
         # resolve after another second
         $timeout ->
@@ -73,7 +73,48 @@ define ['coreModule'], (app) ->
         , 1000
         return anotherDeferred.promise
       .then (two) ->
-        console.log('Promise two resolved with ', two);
+        # console.log('Promise two resolved with ', two);
+
+      vm
+  ]
+
+  # test scope in angular
+  app.controller 'outer', [
+    '$scope'
+    ($scope) ->
+      vm = this
+
+      $scope.a = 1
+      $scope.data =
+        a: 2
+
+      $scope.$watch 'a', (newValue) ->
+        console.log 'a = ' + newValue
+
+      vm.flag = 2
+
+      $scope.$watch 'vm.flag', (newValue) ->
+        console.log 'vm.flag = ' + newValue
+
+      @internalVar = 3;
+      $scope.add = =>
+        @internalVar++
+        console.log @internalVar
+
+      newScope = $scope.$new()
+      newScope.tag = 10
+      $scope.minus = ->
+        newScope.tag--
+
+      newScope.$watch 'tag', (newValue) ->
+        console.log 'tag = ' + newValue
+      vm
+  ]
+
+  app.controller 'inner', [
+    '$scope'
+    ($scope) ->
+      vm = this
 
       vm
   ]

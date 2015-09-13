@@ -76,3 +76,16 @@ body {
     padding: 30px;
   }
 }
+.angular .outer {
+  padding-left: 10px;
+  background-color: #ffa500;
+}
+.angular .outer .inner {
+  margin: 20px;
+  background-color: #808080;
+  padding-left: 10px;
+}
+.angular .outer .inner-if {
+  margin: 20px;
+  background-color: #c0c0c0;
+}

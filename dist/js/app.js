@@ -60,7 +60,8 @@ define(['angular', 'angularUIRouter', 'angularAnimate', 'coreLoader'], function(
     }
   ]).run([
     '$rootScope', function($rootScope) {
-      return $rootScope.hello = 'Hello Byron';
+      $rootScope.hello = 'Hello Byron';
+      return $rootScope.there = 'Hello Byron';
     }
   ]);
   return app;

@@ -8,5 +8,42 @@
       Test $q of Angular
     </div>
   </div>
-</div>
+  <hr/>
 
+  <div class="outer" ng-controller="outer as vm">
+    <span>Outer controller: a = {{a}}</span>
+    <span>Outer controller: data.a = {{data.a}}</span>
+    <div class="inner" ng-controller="inner">
+      <span>Inner controller: a = {{a}}</span>
+      <span>Inner controller: data.a = {{data.a}}</span>
+      <div>
+        <button class="btn btn-deftaut" ng-click="$parent.a = a + 1">$parent.a=a+1</button>
+        <button class="btn btn-deftaut" ng-click="a = a + 1">a=a+1</button>
+        <button class="btn btn-warn" ng-click="data.a = data.a + 1">data.a=data.a+1</button>
+        <button class="btn btn-warn" ng-click="$parent.data.a = data.a + 1">$parnet.data.a=data.a+1</button>
+      </div>
+    </div>
+
+    <div class="inner-if" ng-if="1==1">
+      <code>ng-if</code> will create a new scope to the DOM to be shown.
+      This behavior also applies to directive <code>ng-include, ng-switch</code>
+      and <code>ng-show(hode)</code> will not trigger this behavior.
+      <div>
+        <button class="btn btn-primary" ng-click="a=100">a = 100</button>
+        <button class="btn btn-primary" ng-click="$parent.a = 100">$parent.a=100</button>
+        <button class="btn btn-primary" ng-click="data.a = 100">data.a=100</button>
+        <button class="btn btn-primary" ng-click="$parent.data.a = 100">$parent.data.a=100</button>
+      </div>
+    </div>
+
+    <div>
+      <span>vm.flag = {{vm.flag}}</span><button class="btn btn-info" ng-click="vm.flag = vm.flag + 1">vm.flag=vm.flag+1</button>
+    </div>
+    <!-- Test $scope.$new and watch the new varible. -->
+    <div>
+      <span>Adds a varible with 1 which isn't attached on <code>$scope</code> or <code>this</code>.<br/>
+      We can use <code>$scope.$new</code> bind this varible on this new scope and perform its watch method to listen whether its value is changed.</span>
+      <a class="btn btn-success" ng-click="add()">add</a>
+      <a class="btn btn-success" ng-click="minus()">minus</a>
+    </div>
+  </div>
