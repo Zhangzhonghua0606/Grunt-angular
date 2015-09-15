@@ -3,6 +3,7 @@ define [
   './controllers/memberCtrl'
   './controllers/homeCtrl'
   './controllers/angularCtrl'
+  './controllers/scopeCtrl'
   './controllers/modal/confirmCtrl'
   './services/userService'
 ], ->

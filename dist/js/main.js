@@ -8,7 +8,8 @@ require.config({
     angularUIRouter: bowerPath + 'angular-ui-router/release/angular-ui-router',
     angularAnimate: bowerPath + 'angular-animate/angular-animate',
     jquery: bowerPath + 'jquery/dist/jquery',
-    uiBootstrap: bowerPath + 'angular-bootstrap/ui-bootstrap.min'
+    uiBootstrap: bowerPath + 'angular-bootstrap/ui-bootstrap.min',
+    lodash: bowerPath + 'lodash/lodash.min'
   },
   shim: {
     angular: {

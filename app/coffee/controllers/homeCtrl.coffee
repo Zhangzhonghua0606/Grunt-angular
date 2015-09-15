@@ -15,6 +15,9 @@ define ['coreModule'], (app) ->
         sex: 'male'
         email: 'xiaoqi_2591@outlook.com'
 
+      user = _.cloneDeep vm.currentUser
+      console.log user
+
       userService.user = vm.currentUser
 
       vm

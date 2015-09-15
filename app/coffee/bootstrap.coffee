@@ -1,5 +1,6 @@
 define [
   'jquery'
+  'lodash'
   'app'
 ], ($) ->
   $(document).ready ->

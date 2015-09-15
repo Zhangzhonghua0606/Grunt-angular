@@ -24,6 +24,11 @@ define(['angular', 'angularUIRouter', 'angularAnimate', 'coreLoader'], function(
         templateUrl: 'partials/angular.html',
         controller: 'ctrl.angular',
         controllerAs: 'angular'
+      }).state('scope', {
+        url: '/scope',
+        templateUrl: 'partials/scope.html',
+        controller: 'ctrl.scope',
+        controllerAs: 'angularScope'
       }).state('modal', {
         views: {
           modal: {
