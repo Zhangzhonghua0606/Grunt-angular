@@ -11,7 +11,7 @@
     <p>
       <code>{{home.currentUser}}</code>
     </p>
-    <button class="btn btn-primary" ui-sref="modal.confirmAddToCart">Add to cart</button>
+    <button class="btn btn-primary" ng-click="home.addToCart()">Add to cart</button>
     <a href="index.html#/angular/user/edit/123" class="btn btn-default">go to angular</a>
   </div>
   <div ui-view="modal" class="modal-animation" autoscroll="false"></div>
